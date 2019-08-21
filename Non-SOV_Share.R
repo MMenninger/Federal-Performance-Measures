@@ -30,7 +30,8 @@ county <- map_dfr(.x = years,
 urban_area <- map_dfr(.x = years, 
                       .f= ~ get_acs(geography = "urban area", variables = DP03_variables, year = .x,  output="wide",
                                     survey = "acs5" ), 
-                      .id = "year")
+                      .id = "year") %>%
+              filter(GEOID == "16264")  #Filter for Chicago Region
 
 
 ## Clean up the data ------------
@@ -38,7 +39,6 @@ urban_area <- map_dfr(.x = years,
 annual_data_cleaned <- urban_area %>%
   #annual_data_cleaned <- county %>%
   #annual_data_cleaned <- tract %>%
-  filter(GEOID == "16264") %>% #Filter for Chicago Region
   mutate(
     wrkrs_16plus = DP03_0018E,   # Universe: Workers 16 years and over
     drv_alone = DP03_0019E,      # Car, truck, or van: Drove alone
