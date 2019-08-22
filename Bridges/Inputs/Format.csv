@@ -1,0 +1,138 @@
+ITEM_NO,ITEM_NAME,ITEM POSITION,ITEM_LENGTHTYPE,ITEM_LENGTH,Precision,TYPE,Skip,Column_Name,F_Class,Same
+1,State Code,1 - 3,3/N,3,,N,,STATE_CODE_001,integer,i
+8,Structure Number,4 - 18,15/AN,15,,AN,,STRUCTURE_NUMBER_008,character varying,c
+5A,Record Type,19,1/AN,1,,AN,,RECORD_TYPE_005A,character varying,c
+5B,Route Signing Prefix,20,1/N,1,,N,,ROUTE_PREFIX_005B,integer,c
+5C,Designated Level of Service,21,1/N,1,,N,,SERVICE_LEVEL_005C,integer,c
+5D,Route Number,22 - 26,5/AN,5,,AN,,ROUTE_NUMBER_005D,character varying,c
+5E,Directional Suffix,27,1/N,1,,N,,DIRECTION_005E,integer,c
+2,Highway Agency District,28 - 29,2/AN,2,,AN,,HIGHWAY_DISTRICT_002,character varying,c
+3,County (Parish) Code,30 - 32,3/N,3,,N,,COUNTY_CODE_003,integer,c
+4,Place Code,33 - 37,5/N,5,,N,,PLACE_CODE_004,integer,c
+6A,Features Intersected,38 - 61,24/AN,24,,AN,,FEATURES_DESC_006A,character varying,c
+6B,Critical Facility Indicator,62,1/AN,1,,AN,,CRITICAL_FACILITY_006B,character varying,c
+7,Facility Carried By Structure,63 - 80,18/AN,18,,AN,,FACILITY_CARRIED_007,character varying,c
+9,Location,81 - 105,25/AN,25,,AN,,LOCATION_009,character varying,c
+10,"Inventory Rte, Min Vert Clearance",106 - 109,4/N,4,,N,,MIN_VERT_CLR_010,numeric,c
+11,Kilometerpoint,110 - 116,7/N,7,,N,,KILOPOINT_011,integer,c
+12,Base Highway Network,117,1/N,1,,N,,BASE_HWY_NETWORK_012,integer,c
+13A,LRS Inventory Route,118 - 127,10/AN,10,,AN,,LRS_INV_ROUTE_013A,character varying,c
+13B,Subroute Number,128 - 129,2/N,2,,N,,SUBROUTE_NO_013B,integer,c
+-9,Latitude,130 - 137,8/N,8,,N,,LAT_016,integer,c
+17,Longitude,138 - 146,9/N,9,,N,,LONG_017,integer,c
+19,Bypass/Detour Length,147 - 149,3/N,3,,N,,DETOUR_KILOS_019,integer,c
+20,Toll,150,1/N,1,,N,,TOLL_020,integer,c
+21,Maintenance Responsibility,151 - 152,2/N,2,,N,,MAINTENANCE_021,integer,c
+22,Owner,153 - 154,2/N,2,,N,,OWNER_022,integer,c
+26,Functional Class Of Inventory Rte.,155 - 156,2/N,2,,N,,FUNCTIONAL_CLASS_026,integer,c
+27,Year Built,157 - 160,4/N,4,,N,,YEAR_BUILT_027,integer,n
+28A,Lanes On Structure,161 - 162,2/N,2,,N,,TRAFFIC_LANES_ON_028A,integer,c
+28B,Lanes Under Structure,163 - 164,2/N,2,,N,,TRAFFIC_LANES_UND_028B,integer,c
+29,Average Daily Traffic,165 - 170,6/N,6,,N,,ADT_029,integer,n
+30,Year Of Average Daily Traffic,171 - 174,4/N,4,,N,,YEAR_ADT_030,integer,c
+31,Design Load,175,1/N,1,,N,,DESIGN_LOAD_031,character varying,c
+32,Approach Roadway Width,176 - 179,4/N,4,,N,,APPR_WIDTH_MT_032,character varying,n
+33,Bridge Median,180,1/N,1,,N,,MEDIAN_CODE_033,integer,c
+34,Skew,181 - 182,2/N,2,,N,,DEGREES_SKEW_034,integer,c
+35,Structure Flared,183,1/N,1,,N,,STRUCTURE_FLARED_035,integer,c
+36A,Bridge Railings,184,1/AN,1,,AN,,RAILINGS_036A,character varying,c
+36B,Transitions,185,1/AN,1,,AN,,TRANSITIONS_036B,character varying,c
+36C,Approach Guardrail,186,1/AN,1,,AN,,APPR_RAIL_036C,character varying,c
+36D,Approach Guardrail Ends,187,1/AN,1,,AN,,APPR_RAIL_END_036D,character varying,c
+37,Historical significance,188,1/N,1,,N,,HISTORY_037,integer,c
+38,Navigation Control,189,1/AN,1,,AN,,NAVIGATION_038,character varying,c
+39,Navigation Vertical Clearance,190 - 193,4/N,4,,N,,NAV_VERT_CLR_MT_039,integer,c
+40,Navigation Horizontal Clearance,194 - 198,5/N,5,,N,,NAV_HORR_CLR_MT_040,integer,c
+41,Structure Open/Posted/Closed,199,1/AN,1,,AN,,OPEN_CLOSED_POSTED_041,character varying,c
+42A,Type of Service On Bridge,200,1/N,1,,N,,SERVICE_ON_042A,integer,c
+42B,Type of Service Under Bridge,201,1/N,1,,N,,SERVICE_UND_042B,integer,c
+43A,Kind of Material/Design,202,1/N,1,,N,,STRUCTURE_KIND_043A,integer,c
+43B,Type of Design/Construction,203 - 204,2/N,2,,N,,STRUCTURE_TYPE_043B,integer,c
+44A,Kind of Material/Design,205,1/N,1,,N,,APPR_KIND_044A,integer,c
+44B,Type of Design/Construction,206 - 207,2/N,2,,N,,APPR_TYPE_044B,integer,c
+45,Number Of Spans In Main Unit,208 - 210,3/N,3,,N,,MAIN_UNIT_SPANS_045,character varying,c
+46,Number Of Approach Spans,211 - 214,4/N,4,,N,,APPR_SPANS_046,character varying,c
+47,Inventory Rte Total Horz Clearance,215 - 217,3/N,3,,N,,HORR_CLR_MT_047,numeric,c
+48,Length Of Maximum Span,218 - 222,5/N,5,,N,,MAX_SPAN_LEN_MT_048,numeric,c
+49,Structure Length,223 - 228,6/N,6,,N,,STRUCTURE_LEN_MT_049,numeric,n
+50A,Left Curb/Sidewalk Width,229 - 231,3/N,3,,N,,LEFT_CURB_MT_050A,numeric,c
+50B,Right Curb/Sidewalk Width,232 - 234,3/N,3,,N,,RIGHT_CURB_MT_050B,numeric,c
+51,Bridge Roadway Width Curb-To-Curb,235 - 238,4/N,4,,N,,ROADWAY_WIDTH_MT_051,numeric,c
+52,"Deck Width, Out-To-Out",239 - 242,4/N,4,,N,,DECK_WIDTH_MT_052,numeric,n
+53,Min Vert Clear Over Bridge Roadway,243 - 246,4/N,4,,N,,VERT_CLR_OVER_MT_053,numeric,c
+54A,Reference Feature,247,1/AN,1,,AN,,VERT_CLR_UND_REF_054A,character varying,c
+54B,Minimum Vertical Underclearance,248 - 251,4/N,4,,N,,VERT_CLR_UND_054B,numeric,c
+55A,Reference Feature,252,1/AN,1,,AN,,LAT_UND_REF_055A,character varying,c
+55B,Minimum Lateral Underclearance,253 - 255,3/N,3,,N,,LAT_UND_MT_055B,integer,c
+56,Min Lateral Underclear On Left,256 - 258,3/N,3,,N,,LEFT_LAT_UND_MT_056,integer,c
+58,Deck,259,1/AN,1,,AN,,DECK_COND_058,character varying,n
+59,Superstructure,260,1/AN,1,,AN,,SUPERSTRUCTURE_COND_059,character varying,n
+60,Substructure,261,1/AN,1,,AN,,SUBSTRUCTURE_COND_060,character varying,n
+61,Channel/Channel Protection,262,1/AN,1,,AN,,CHANNEL_COND_061,character varying,c
+62,Culverts,263,1/AN,1,,AN,,CULVERT_COND_062,character varying,n
+63,Method Used To Determine Operating Rating,264,1/N,1,,N,,OPR_RATING_METH_063,character varying,c
+64,Operating Rating,265 - 267,3/N,3,,N,,OPERATING_RATING_064,numeric,c
+65,Method Used To Determine Inventory Rating,268,1/N,1,,N,,INV_RATING_METH_065,character varying,c
+66,Inventory Rating,269 - 271,3/N,3,,N,,INVENTORY_RATING_066,numeric,c
+67,Structural Evaluation,272,1/AN,1,,AN,,STRUCTURAL_EVAL_067,character varying,c
+68,Deck Geometry,273,1/AN,1,,AN,,DECK_GEOMETRY_EVAL_068,character varying,c
+69,"Underclear, Vertical & Horizontal",274,1/AN,1,,AN,,UNDCLRENCE_EVAL_069,character varying,c
+70,Bridge Posting,275,1/N,1,,N,,POSTING_EVAL_070,integer,c
+71,Waterway Adequacy,276,1/AN,1,,AN,,WATERWAY_EVAL_071,character varying,c
+72,Approach Roadway Alignment,277,1/AN,1,,AN,,APPR_ROAD_EVAL_072,character varying,c
+75A,Type of Work Proposed,278 - 279,2/N,2,,N,,WORK_PROPOSED_075A,integer,c
+75B,Work Done By,280,1/AN,1,,AN,,WORK_DONE_BY_075B,character varying,c
+76,Length Of Structure Improvement,281 - 286,6/N,6,,N,,IMP_LEN_MT_076,numeric,c
+90,Inspection Date,287 - 290,4/N,4,,N,,DATE_OF_INSPECT_090,integer,c
+91,Designated Inspection Frequency,291 - 292,2/N,2,,N,,INSPECT_FREQ_MONTHS_091,integer,c
+92A,Fracture Critical Details,293 - 295,3/AN,3,,AN,,FRACTURE_092A,character varying,c
+92B,Underwater Inspection,296 - 298,3/AN,3,,AN,,UNDWATER_LOOK_SEE_092B,character varying,c
+92C,Other Special Inspection,299 - 301,3/AN,3,,AN,,SPEC_INSPECT_092C,character varying,c
+93A,Fracture Critical Details Date,302 - 305,4/AN,4,,AN,,FRACTURE_LAST_DATE_093A,character varying,c
+93B,Underwater Inspection Date,306 - 309,4/AN,4,,AN,,UNDWATER_LAST_DATE_093B,character varying,c
+93C,Other Special Inspection Date,310 - 313,4/AN,4,,AN,,SPEC_LAST_DATE_093C,character varying,c
+94,Bridge Improvement Cost,314 - 319,6/N,6,,N,,BRIDGE_IMP_COST_094,integer,c
+95,Roadway Improvement Cost,320 - 325,6/N,6,,N,,ROADWAY_IMP_COST_095,integer,c
+96,Total Project Cost,326 - 331,6/N,6,,N,,TOTAL_IMP_COST_096,integer,c
+97,Year Of Improvement Cost Estimate,332 - 335,4/N,4,,N,,YEAR_OF_IMP_097,integer,c
+98A,Neighboring State Code,336 - 338,3/AN,3,,AN,,OTHER_STATE_CODE_098A,character varying,c
+98B,Percent Responsibility,339 - 340,2/N,2,,N,,OTHER_STATE_PCNT_098B,integer,c
+99,Border Bridge Structure Number,341 - 355,15/AN,15,,AN,,OTHR_STATE_STRUC_NO_099,character varying,c
+100,STRAHNET Highway Designation,356,1/N,1,,N,,STRAHNET_HIGHWAY_100,integer,c
+101,Parallel Structure Designation,357,1/AN,1,,AN,,PARALLEL_STRUCTURE_101,character varying,c
+102,Direction Of Traffic,358,1/N,1,,N,,TRAFFIC_DIRECTION_102,integer,c
+103,Temporary Structure Designation,359,1/AN,1,,AN,,TEMP_STRUCTURE_103,character varying,c
+104,Highway System Of Inventory Route,360,1/N,1,,N,,HIGHWAY_SYSTEM_104,integer,c
+105,Federal Lands Highways,361,1/N,1,,N,,FEDERAL_LANDS_105,integer,c
+106,Year Reconstructed,362 - 365,4/N,4,,N,,YEAR_RECONSTRUCTED_106,integer,c
+107,Deck Structure Type,366,1/AN,1,,AN,,DECK_STRUCTURE_TYPE_107,character varying,c
+108A,Type of Wearing Surface,367,1/AN,1,,AN,,SURFACE_TYPE_108A,character varying,c
+108B,Type of Membrane,368,1/AN,1,,AN,,MEMBRANE_TYPE_108B,character varying,c
+108C,Deck Protection,369,1/AN,1,,AN,,DECK_PROTECTION_108C,character varying,c
+109,AVERAGE DAILY TRUCK TRAFFIC,370 - 371,2/N,2,,N,,PERCENT_ADT_TRUCK_109,integer,c
+110,DESIGNATED NATIONAL NETWORK,372,1/N,1,,N,,NATIONAL_NETWORK_110,integer,c
+111,PIER/ABUTMENT PROTECTION,373,1/N,1,,N,,PIER_PROTECTION_111,integer,c
+112,NBIS BRIDGE LENGTH,374,1/AN,1,,AN,,BRIDGE_LEN_IND_112,character varying,c
+113,SCOUR CRITICAL BRIDGES,375,1/AN,1,,AN,,SCOUR_CRITICAL_113,character varying,c
+114,FUTURE AVERAGE DAILY TRAFFIC,376 - 381,6/N,6,,N,,FUTURE_ADT_114,integer,c
+115,YEAR OF FUTURE AVG DAILY TRAFFIC,382 - 385,4/N,4,,N,,YEAR_OF_FUTURE_ADT_115,integer,c
+116,MINIMUM NAVIGATION VERTICAL CLEARANCE VERTICAL LIFT BRIDGE,386 - 389,4/N,4,,N,,MIN_NAV_CLR_MT_116,numeric,c
+,FED_AGENCY,,,1,,,,FED_AGENCY,character varying,c
+,DATE_LAST_UPDATE,,,5,,,,DATE_LAST_UPDATE,character varying,c
+,TYPE_LAST_UPDATE,,,1,,,,TYPE_LAST_UPDATE,character varying,c
+,DEDUCT_CODE,,,1,,,,DEDUCT_CODE,character varying,c
+,REMARKS,,,21,,,,REMARKS,character varying,c
+,PROGRAM_CODE,,,2,,,,PROGRAM_CODE,character varying,c
+,PROJ_NO,,,1,,,,PROJ_NO,character varying,c
+,PROJ_SUFFIX,,,1,,,,PROJ_SUFFIX,character varying,c
+,NBI_TYPE_OF_IMP,,,1,,,,NBI_TYPE_OF_IMP,character varying,c
+,DTL_TYPE_OF_IMP,,,1,,,,DTL_TYPE_OF_IMP,character varying,c
+,SPECIAL_CODE,,,1,,,,SPECIAL_CODE,character varying,c
+,STEP_CODE,,,1,,,,STEP_CODE,character varying,c
+,STATUS_WITH_10YR_RULE,,,1,,,,STATUS_WITH_10YR_RULE,character varying,c
+,SUFFICIENCY_ASTERC,,,1,,,,SUFFICIENCY_ASTERC,character varying,c
+,SUFFICIENCY_RATING,,,4,,,,SUFFICIENCY_RATING,character varying,c
+,STATUS_NO_10YR_RULE,,,1,,,,STATUS_NO_10YR_RULE,character varying,c
+CAT10,"Bridge Condition (New item in accordance with the Pavement and Bridge Condition Performance Measures final rule, published in January of 2017. This field is not part of the NBI annual file submittal. It is a download field only.)",434,1/AN,1,,AN,,CAT10,character varying,c
+CAT23,Condition code value that dictates the overall Bridge Condition.,435,1/AN,1,,AN,,CAT23,character varying,c
+CAT29,"Deck area as defined by the Pavement and Bridge Condition Performance Measures final rule, published in January of 2017. (This field is not part of the NBI annual file submittal. It is a download field only.)",436 - 445,10/N,10,,N,,CAT29,numeric,c
