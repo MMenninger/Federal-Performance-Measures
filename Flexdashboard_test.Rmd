@@ -1,0 +1,56 @@
+---
+title: "Untitled"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(tidycensus)
+library(purrr)
+library(dplyr)
+library(ggrepel)
+```
+
+```{r load data, include = TRUE}
+load("flex.RData")
+```
+
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+
+ggplot(county_data_cleaned, aes(x= year, y= nonsov_pct, group = NAME))+
+  geom_point(aes(color=NAME))+
+  geom_line(aes(color=NAME)) +
+  geom_text(aes(label= round(nonsov_pct *100, digits = 2)), nudge_y = .002) +
+  ggtitle("Share of trips to work via non-SOV modes",
+          subtitle="among workers aged 16 and over in the Chicago Urbanized Area") +
+  scale_x_continuous("Year",minor_breaks = NULL,  breaks = county_data_cleaned$year) +
+  scale_y_continuous("Share of trips to work", minor_breaks=NULL, labels=scales::percent) +
+  labs(caption="Source: American Community Survey (table DP03)") 
+
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+
+```
+
+### Chart C
+
+```{r}
+
+```
+
