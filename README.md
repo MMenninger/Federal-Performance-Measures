@@ -7,4 +7,3 @@ All scripts will defult to pull data for Chicago Metropolitan Agency for Plannin
 
 Current CMAP report is here:
 https://www.cmap.illinois.gov/documents/10180/862153/FINAL+2018+System+Performance+Report+Appendix.pdf/f5b1714b-1c3b-ce2a-2ce0-7d55a078dc8e
-A Line I wrote at home
